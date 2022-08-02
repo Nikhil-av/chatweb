@@ -24,14 +24,7 @@ export class ChatscreenComponent implements OnInit {
     ),
     setTimeout(()=>this.fun2(),5000)
   }
-  fun22(){
-    this.us.getmessage().subscribe(
-      res=>{
-        this.messages=res.message;
-      },
-    ),
-    setTimeout(()=>this.fun2(),5000)
-  }
+  
 
   ngOnInit(): void {
     let use1=localStorage.getItem('username')
